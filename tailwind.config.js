@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         bla: ["bla", "sans-serif"],
         Mulish: ["Mulish", "sans-serif"],
-        PlayfairDisplay: ["Playfair Display", "serif"],
+        PlayfairDisplay: ["PlayfairDisplay", "serif"],
         Roboto: ["Roboto", "sans-serif"],
       },
       colors: {
@@ -18,9 +18,6 @@ export default {
         silver: "#9BBBDC",
         purple: "#959EFF",
         blue: "#5ca1ec",
-      },
-      backgroundImage: {
-        f1: "url('/public/f1.jpg)",
       },
     },
   },

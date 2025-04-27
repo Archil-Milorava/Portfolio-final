@@ -70,7 +70,7 @@ const FirstPage = () => {
           better experience on full screen
         </p>
 
-        <div ref={imageRef} classsName="mb-4">
+        <div ref={imageRef} className="mb-4">
           <HiOutlineArrowLongDown className="mb-4 text-4xl font-extralight" />
         </div>
       </div>
