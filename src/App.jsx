@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import Experience from "./pages/Experience";
 import FirstPage from "./pages/FirstPage";
 import SecondPage from "./pages/SecondPage";
-import Experience from "./pages/Experience";
 import TechStack from "./pages/TechStack";
 import VideoPage from "./pages/VideoPage";
 import Footer from "./pages/footer";
