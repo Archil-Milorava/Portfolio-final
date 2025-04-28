@@ -67,7 +67,7 @@ const backend = [
   },
   {
     title: "express",
-    icon: "express",
+    icon: "mongodb",
   },
   {
     title: "mongodb",
