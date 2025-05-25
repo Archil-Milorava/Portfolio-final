@@ -1,36 +1,54 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
-    image: "/inexi.jpghttps://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dexi",
-    techStack: ["React", "Redux", "Tailwind", "FrontEnd"],
-    title: "Packet Delivery",
-    bgColor: "bg-blue",
+    image:
+      "https://res.cloudinary.com/deijidv94/image/upload/v1748171181/1_nbxpfc.jpg",
+    techStack: [
+      "React",
+      "Redux Toolkit",
+      "Tailwind v4",
+      "Framer",
+      "Express",
+      "Prisma",
+      "Neon DB",
+      "REST Api",
+    ],
+    title: "Ecommerce",
+    content:
+      "This is an ecommerce front end website with beautiful animation. It fetches data with react query from Neon DB. The backend is build with node/express. On front you can manipulate cart state which is bult with redux toolkit.",
+    bgColor: "bg-gold",
+    github: "https://github.com/Archil-Milorava/ecommerce",
+    liveLink: "https://ecommerce-ig4w.onrender.com",
+    fullStack: true,
   },
   {
-    image: "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "imedi",
-    techStack: ["React", "Styled Components", "MUI"],
-    title: "Insurance Company",
-    bgColor: "bg-silver",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "music",
-    techStack: ["React", "MUI", "Tailwind", "RestAPI"],
-    title: "Music Chords Web-site",
-    bgColor: "bg-purple",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "bmg",
-    techStack: ["React", "Tailwind", "Redux"],
-    title: "F1 Shop Georgia",
+    image:
+      "https://res.cloudinary.com/deijidv94/image/upload/v1748171895/1_mrxfol.jpg",
+    techStack: [
+      "React",
+      "Tailwind Css",
+      "React Query",
+      "Leaflet Map",
+      "Server Side Filtering",
+      "Node Js",
+      "Express",
+      "Prisma",
+      "Postgress",
+      "REST Api",
+      "JWT Auth",
+    ],
+    title: "Book Real Estate",
+    content:
+      "The data is collected by me and counts 15-16 properties with several images. On this platform user can register and login with JWT, which is sent with httpOnly cookie. After that User is able to choose wished dates and number of gusts and book a property. The stack is react and express. The data is fetched from URL, with serverside filtering. The booked property is saved on Neon DB.",
     bgColor: "bg-yellow",
+    github: "https://github.com/Archil-Milorava/real-estate",
+    liveLink: "https://real-estate-2dmj.onrender.com/",
+    fullStack: true,
   },
 ];
 
@@ -71,24 +89,25 @@ const SecondPage = () => {
   });
 
   return (
-    <section className="hidden w-full h-auto min-h-screen overflow-hidden  text-dark sm:flex sm:flex-col bg-gradient-to-t from-[#E8E8E8] to-white pb-16 ">
-      <div className="h-1/6 w-full flex items-center justify-center font-Mulish text-black font-bold  uppercase gap-4 sm:gap-11">
+    <section className=" w-full h-auto min-h-screen overflow-hidden  text-dark sm:flex sm:flex-col bg-gradient-to-t from-[#E8E8E8] to-white pb-16 ">
+      {/* introduction */}
+      <div className="h-1/6 w-full pt-4  px-2 flex items-center justify-center font-Mulish text-black font-bold  uppercase gap-4 sm:gap-11">
         <h1
           ref={selectedRef}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[9rem] tracking-widest"
+          className="text-5xl sm:text-8xl md:text-9xl tracking-widest"
         >
           selected
         </h1>
         <h1
           ref={workRef}
-          className="text-4xl flex items-center justify-center sm:text-5xl md:text-6xl lg:text-7xl xl:text-[9rem] tracking-widest"
+          className="text-5xl sm:text-8xl md:text-9xl flex items-center justify-center  tracking-widest"
         >
           w
           <span>
             <img
               src="/o.png"
               alt="o"
-              className="h-[2rem] sm:h-[2rem] md:h-[5rem] lg:h-[6rem] xl:h-[8rem]"
+              className="h-[2.5rem] sm:h-[5rem] md:h-28"
             />
           </span>{" "}
           rk
@@ -96,10 +115,8 @@ const SecondPage = () => {
       </div>
 
       {/* cards div section */}
-      <div
-        className="w-full pt-24 h-5/6 flex items-center flex-col gap-36 justify-center
-      font-bla font-bold "
-      >
+
+      <div className="h-full w-full flex flex-col items-center">
         {projects.map((project, i) => (
           <ProjectCard key={i} {...project} />
         ))}

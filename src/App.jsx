@@ -35,7 +35,6 @@ const App = () => {
         <GoToTop />
         <FirstPage />
         <SecondPage />
-        <Experience />
         <TechStack />
         <VideoPage />
         <Footer />
