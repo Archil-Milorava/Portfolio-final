@@ -89,7 +89,7 @@ const SecondPage = () => {
   });
 
   return (
-    <section className=" w-full h-auto min-h-screen overflow-hidden  text-dark sm:flex sm:flex-col bg-gradient-to-t from-[#E8E8E8] to-white pb-16 ">
+    <section className=" w-full h-auto min-h-screen overflow-hidden  text-dark sm:flex sm:flex-col bg-white pb-16 ">
       {/* introduction */}
       <div className="h-1/6 w-full pt-4  px-2 flex items-center justify-center font-Mulish text-black font-bold  uppercase gap-4 sm:gap-11">
         <h1
@@ -116,7 +116,7 @@ const SecondPage = () => {
 
       {/* cards div section */}
 
-      <div className="h-full w-full flex flex-col items-center">
+      <div className="h-full w-full flex flex-col items-center pt-11">
         {projects.map((project, i) => (
           <ProjectCard key={i} {...project} />
         ))}

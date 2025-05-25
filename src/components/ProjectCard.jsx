@@ -17,7 +17,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`w-full md:max-w-[1400px] h-[45rem] md:h-[35rem] md:flex md:flex-row md:px-11   py-1  overflow-visible flex flex-col items-center my-24 relative font-Mulish cursor-pointer hover:bg-orange transition-all duration-1000 hover:shadow-sm ${bgColor} `}
+      className={`w-full md:max-w-[1400px] h-[45rem]  md:h-[35rem] md:flex md:flex-row md:px-11   py-1  overflow-visible flex flex-col items-center my-24 relative  cursor-pointer hover:bg-orange transition-all duration-1000 hover:shadow-sm ${bgColor} font-PlayfairDisplay `}
     >
       {/* Image container with negative margin to raise it above */}
       <motion.div
@@ -35,21 +35,21 @@ const ProjectCard = ({
             },
           },
         }}
-        className="w-[80%] h-[100%] -mt-11 z-10 rounded-3xl overflow-hidden shadow-xs "
+        className="w-[80%] h-[100%] border border-black/10 -mt-11 z-10 rounded-3xl overflow-hidden shadow-xs "
       >
         <img src={image} alt="Project" className="h-full w-full object-cover" />
       </motion.div>
 
       {/* Content section */}
       <div className="w-full h-full flex flex-col items-start justify-around px-8  z-0 overflow-hidden ">
-        <div className="text-md md:text-lg py-1">
+        <div className="text-md md:text-xl py-1  h-[8rem] md:h-auto overflow-hidden ">
           <TextReveal delay={0.5}>{content}</TextReveal>
         </div>
         <ul className="flex gap-1  flex-wrap ">
           {techStack.map((tech, index) => (
             <li
               key={index}
-              className="px-3 py-1 text-sm md:text-md font-semibold text-center bg-white rounded-full"
+              className="px-3 py-1 text-sm md:text-md tracking-wider text-center bg-white font-Mulish font-semibold rounded-full"
             >
               {tech}
             </li>

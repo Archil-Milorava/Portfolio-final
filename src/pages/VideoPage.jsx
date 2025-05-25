@@ -6,7 +6,7 @@ const video =
 
 const VideoPage = () => {
   return (
-    <section className="h-[65rem] w-full relative overflow-hidden">
+    <section className="h-screen w-full relative overflow-hidden">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"

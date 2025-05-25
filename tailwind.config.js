@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         bla: ["bla", "sans-serif"],
+        pirveli: ["pirveli", "sans-serif"],
+        meore: ["meore", "sans-serif"],
         Mulish: ["Mulish", "sans-serif"],
         PlayfairDisplay: ["PlayfairDisplay", "serif"],
         Roboto: ["Roboto", "sans-serif"],

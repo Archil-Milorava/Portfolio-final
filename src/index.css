@@ -11,6 +11,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "pirveli";
+  src: url("/src/assets/fonts/pirveli.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "meore";
+  src: url("/src/assets/fonts/meore.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 
 /*  normal CSS */
 ::selection {
