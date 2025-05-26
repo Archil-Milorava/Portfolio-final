@@ -17,7 +17,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`w-full md:max-w-[1400px] h-[45rem]  md:h-[35rem] md:flex md:flex-row md:px-11   py-1  overflow-visible flex flex-col items-center my-24 relative  cursor-pointer hover:bg-orange transition-all duration-1000 hover:shadow-sm ${bgColor} font-PlayfairDisplay `}
+      className={`w-full md:max-w-[1400px] h-[45rem]  md:h-[35rem] md:flex md:flex-row md:px-11   py-1  overflow-visible flex flex-col items-center my-24 relative  cursor-pointer  transition-all duration-1000 hover:shadow-md hover:bg-opacity-80 ${bgColor} font-PlayfairDisplay `}
     >
       {/* Image container with negative margin to raise it above */}
       <motion.div
@@ -35,7 +35,7 @@ const ProjectCard = ({
             },
           },
         }}
-        className="w-[80%] h-[100%] border border-black/10 -mt-11 z-10 rounded-3xl overflow-hidden shadow-xs "
+        className="w-[70%] h-[100%] border border-black/10 -mt-28 z-10 rounded-3xl overflow-hidden shadow-xs "
       >
         <img src={image} alt="Project" className="h-full w-full object-cover" />
       </motion.div>
@@ -60,13 +60,13 @@ const ProjectCard = ({
         </h1>
         <div className="flex items-center justify-start gap-4 w-full">
           <div className="flex items-center justify-start gap-4 w-full">
-            <a href={github} target="blank">
+            <a href={github} target="_blank" rel="noopener noreferrer">
               <FaGithub
                 size={25}
                 className="text-gray-800 transition-all duration-200 hover:opacity-80"
               />
             </a>
-            <a href={liveLink} target="blank">
+            <a href={liveLink} target="_blank" rel="noopener noreferrer">
               <FaArrowUpRightFromSquare
                 size={25}
                 className="text-gray-800 transition-all duration-200 hover:opacity-80"

@@ -2,12 +2,13 @@ import TextReveal from "../components/TextReveal";
 
 const Footer = () => {
   return (
-    <section className=" bg-[#ebebeb] h-[5rem]  sm:h-[10rem] w-full font-PlayfairDisplay text-xl">
+    <section className=" bg-[#ebebeb] h-[5rem]  sm:h-[10rem] w-full font-Mulish font-extralight uppercase tracking-widest text-xl transition-all duration-1000">
       <ul className="w-full h-full flex items-center justify-center text-dark gap-8 ">
         <TextReveal delay={0.1}>
           <a
             className="cursor-pointer hover:underline transition-all duration-1000 "
-            href=""
+            href="https://www.linkedin.com/in/archil-milorava-9199a110a/"
+            target="_blank"
           >
             LinkedIn
           </a>
@@ -15,7 +16,8 @@ const Footer = () => {
         <TextReveal delay={0.2}>
           <a
             className="cursor-pointer hover:underline transition-all duration-1000 "
-            href=""
+            href="https://github.com/Archil-Milorava"
+            target="_blank"
           >
             Github
           </a>
@@ -24,6 +26,7 @@ const Footer = () => {
           <a
             className="cursor-pointer hover:underline transition-all duration-1000 "
             href=""
+            target="_blank"
           >
             Instagram
           </a>
@@ -31,7 +34,8 @@ const Footer = () => {
         <TextReveal delay={0.4}>
           <a
             className="cursor-pointer hover:underline transition-all duration-1000 "
-            href=""
+            href="https://x.com/achimilorava"
+            target="_blank"
           >
             Twitter
           </a>

@@ -50,6 +50,32 @@ const projects = [
     liveLink: "https://real-estate-2dmj.onrender.com/",
     fullStack: true,
   },
+  {
+    image:
+      "https://res.cloudinary.com/deijidv94/image/upload/v1748252833/Screenshot_2025-05-26_134653_fmuv6r.jpg",
+    techStack: ["React", "Tailwind Css", "Framer motion"],
+    title: "Setanta Sports Landing",
+    content: (
+      <>
+        This is sport streaming platform, which has very beautiful ui design. I
+        have spontaneously built the landing page and tried to make it as
+        similar as possible. The ui is done with Tailwind v4 and the animations
+        with framer motion. The original website is{" "}
+        <a
+          href="https://setantasports.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" text-gray-500 hover:opacity-90 cursor-pointer"
+        >
+          here
+        </a>
+      </>
+    ),
+    bgColor: "bg-silver",
+    github: "https://github.com/Archil-Milorava/Set-Clone",
+    liveLink: "https://set-clone.vercel.app/",
+    fullStack: false,
+  },
 ];
 
 gsap.registerPlugin(ScrollTrigger);
