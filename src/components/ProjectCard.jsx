@@ -17,7 +17,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`w-full md:max-w-[1400px] h-[45rem]  md:h-[35rem] md:flex md:flex-row md:px-11   py-1  overflow-visible flex flex-col items-center my-24 relative  cursor-pointer  transition-all duration-1000 hover:shadow-md hover:bg-opacity-80 ${bgColor} font-PlayfairDisplay `}
+      className={`w-full md:max-w-[1400px] h-[45rem]  md:h-[35rem] md:flex md:flex-row md:px-11   py-1  overflow-visible flex flex-col items-center my-24 relative  cursor-pointer  transition-all duration-1000 hover:shadow-md hover:bg-opacity-90 ${bgColor} font-PlayfairDisplay `}
     >
       {/* Image container with negative margin to raise it above */}
       <motion.div

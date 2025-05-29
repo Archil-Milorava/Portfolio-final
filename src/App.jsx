@@ -30,6 +30,7 @@ const App = () => {
       <GoToTop />
       <FirstPage />
       <SecondPage />
+     
       <MarqueText />
       <TechStack />
       <BeforeVideo />

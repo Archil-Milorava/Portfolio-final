@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 import ProjectCard from "../components/ProjectCard";
+import TextReveal from "../components/TextReveal";
 
 const projects = [
   {
@@ -42,9 +43,9 @@ const projects = [
       "REST Api",
       "JWT Auth",
     ],
-    title: "Book Real Estate",
+    title: "Book a Real Estate",
     content:
-      "The data is collected by me and counts 15-16 properties with several images. On this platform user can register and login with JWT, which is sent with httpOnly cookie. After that User is able to choose wished dates and number of gusts and book a property. The stack is react and express. The data is fetched from URL, with serverside filtering. The booked property is saved on Neon DB.",
+      "The data is collected by me and counts 15-16 properties with several images. On this platform user can register and login with JWT, which is sent with httpOnly cookie. After that User is able to choose wished dates and number of guests and book a property. The stack is react and express. The data is fetched from URL, with serverside filtering. The booked property is saved on Neon DB.",
     bgColor: "bg-yellow",
     github: "https://github.com/Archil-Milorava/real-estate",
     liveLink: "https://real-estate-2dmj.onrender.com/",
@@ -74,6 +75,33 @@ const projects = [
     bgColor: "bg-silver",
     github: "https://github.com/Archil-Milorava/Set-Clone",
     liveLink: "https://set-clone.vercel.app/",
+    fullStack: false,
+  },
+  {
+    image:
+      "https://res.cloudinary.com/deijidv94/image/upload/v1748534477/Screenshot_2025-05-29_195633_oituur.jpg",
+    techStack: ["React", "Tailwind Css 4"],
+    title: "Bakken & Bæck studio",
+    content: (
+      <>
+        Bakken & Bæck is a design and technology studio. I have tried
+        replicating its modern design, smooth animations, and responsive layout.
+        It serves as a showcase of front-end development skills and UI/UX
+        attention to detail. There are 2 pages. The second one, a clients page
+        can be opened on clicking any navbar item. The original website is{" "}
+        <a
+          href="https://bakkenbaeck.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" text-gray-500 hover:opacity-90 cursor-pointer"
+        >
+          here
+        </a>
+      </>
+    ),
+    bgColor: "bg-orange",
+    github: "https://github.com/Archil-Milorava/bakkenBaeck",
+    liveLink: "https://bakken-baeck.vercel.app/",
     fullStack: false,
   },
 ];
@@ -140,6 +168,12 @@ const SecondPage = () => {
         </h1>
       </div>
 
+      <TextReveal>
+        <p className="font-Roboto tracking-wide uppercase text-center text-sm text-red-700 mt-28">
+          The projects marked with "Full-stack" takes 1-2 minutes to load. I
+          kindly ask for a patience to check them.
+        </p>
+      </TextReveal>
       {/* cards div section */}
 
       <div className="h-full w-full flex flex-col items-center pt-11">
