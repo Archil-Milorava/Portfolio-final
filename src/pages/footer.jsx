@@ -2,7 +2,7 @@ import TextReveal from "../components/TextReveal";
 
 const Footer = () => {
   return (
-    <section className=" bg-[#ebebeb] h-[5rem]  sm:h-[10rem] w-full font-Mulish font-extralight uppercase tracking-widest text-xl transition-all duration-1000">
+    <section className=" bg-[#ebebeb] h-[5rem]  sm:h-[10rem] w-full font-Mulish font-extralight uppercase tracking-widest text-xs md:text-xl transition-all duration-1000">
       <ul className="w-full h-full flex items-center justify-center text-dark gap-8 ">
         <TextReveal delay={0.1}>
           <a

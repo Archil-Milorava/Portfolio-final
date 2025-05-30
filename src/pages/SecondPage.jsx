@@ -143,25 +143,25 @@ const SecondPage = () => {
   });
 
   return (
-    <section className=" w-full h-auto min-h-screen overflow-hidden  text-dark sm:flex sm:flex-col bg-white pb-16 ">
+    <section className=" w-full h-auto min-h-screen overflow-hidden  text-dark sm:flex sm:flex-col bg-white   pb ">
       {/* introduction */}
-      <div className="h-1/6 w-full pt-4  px-2 flex items-center justify-center font-Mulish text-black font-bold  uppercase gap-4 sm:gap-11">
+      <div className="h-1/6 w-full pt-4  px-1 flex items-center justify-center font-Mulish text-black font-bold  uppercase gap-4 sm:gap-11">
         <h1
           ref={selectedRef}
-          className="text-5xl sm:text-8xl md:text-9xl tracking-widest"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-widest"
         >
           selected
         </h1>
         <h1
           ref={workRef}
-          className="text-5xl sm:text-8xl md:text-9xl flex items-center justify-center  tracking-widest"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex items-center justify-center  tracking-widest"
         >
           w
           <span>
             <img
               src="/o.png"
               alt="o"
-              className="h-[2.5rem] sm:h-[5rem] md:h-28"
+              className="h-[2rem] sm:h-[3rem] md:h-16 lg:h-[5rem] xl:h-[6rem]"
             />
           </span>{" "}
           rk
@@ -169,14 +169,14 @@ const SecondPage = () => {
       </div>
 
       <TextReveal>
-        <p className="font-Roboto tracking-wide uppercase text-center text-sm text-red-700 mt-28">
+        <p className="font-Roboto tracking-wide uppercase text-center text-[10px] md:text-[20px] px-8 text-red-700 my-8 md:my-8">
           The projects marked with "Full-stack" takes 1-2 minutes to load. I
           kindly ask for a patience to check them.
         </p>
       </TextReveal>
       {/* cards div section */}
 
-      <div className="h-full w-full flex flex-col items-center pt-11">
+      <div className="h-full w-full flex flex-col gap-44  items-center my-40 sm:my-24">
         {projects.map((project, i) => (
           <ProjectCard key={i} {...project} />
         ))}

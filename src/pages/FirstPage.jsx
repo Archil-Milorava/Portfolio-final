@@ -37,24 +37,24 @@ const FirstPage = () => {
   });
 
   return (
-    <main className="  w-full h-screen overflow-hidden bg-[#F5F5ED]  flex flex-col font-pirveli">
+    <main className="  w-full h-screen  bg-[#F5F5ED]   flex flex-col font-pirveli text-dark/90 p-0 m-0 overflow-hidden">
       {/* Header Container */}
       <div className="h-1/6 w-full flex items-center justify-center">
         <h1
           ref={nameRef}
-          className="text-[2rem] sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-[8rem] mt-8 font-semibold  uppercase text-dark  tracking-widest "
+          className="text-[2rem] sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[8rem] mt-8 font-semibold  uppercase  tracking-widest "
         >
           archil milorava
         </h1>
       </div>
 
       {/* Placeholder for content */}
-      <div className=" w-full h-full flex flex-col  items-center justify-around text-dark py-2">
-        <p className="text-[1.5rem]  text-3xl font-bold  tracking-wide">
+      <div className=" w-full h-full flex flex-col  items-center justify-around  py-2">
+        <p className="text-[1rem]  text-3xl font-bold  tracking-wide">
           Web Developer From <span className=" shiny-effect"> Georgia </span>
         </p>
 
-        <div className="">
+        <div className="rounded-md overflow-hidden shadow-sm">
           <img
             src="/profilePic.webp"
             alt="profile"
@@ -62,11 +62,11 @@ const FirstPage = () => {
           />
         </div>
 
-        <p className="hidden sm:block  uppercase  font-bold tracking-wide">
+        <p className="hidden sm:block  uppercase mt-2 font-bold tracking-wide">
           Scroll to explore more
         </p>
 
-        <p className=" sm:hidden uppercase   tracking-wide">
+        <p className=" sm:hidden uppercase mt-2  tracking-widest font-semibold">
           better experience on full screen
         </p>
 

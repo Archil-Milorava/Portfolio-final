@@ -17,7 +17,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`w-full md:max-w-[1400px] h-[45rem]  md:h-[35rem] md:flex md:flex-row md:px-11   py-1  overflow-visible flex flex-col items-center my-24 relative  cursor-pointer  transition-all duration-1000 hover:shadow-md hover:bg-opacity-90 ${bgColor} font-PlayfairDisplay `}
+      className={` md:max-w-[1400px] py-2 max-h-[50rem]  sm:h-[50rem]  md:h-[50rem] lg:h-[30rem] md:flex lg:flex-row md:px-11 lg:mx-11     overflow-visible flex flex-col gap-4 items-center relative  cursor-pointer  transition-all duration-700 hover:shadow-md hover:bg-opacity-90 ${bgColor} font-PlayfairDisplay`}
     >
       {/* Image container with negative margin to raise it above */}
       <motion.div
@@ -35,30 +35,30 @@ const ProjectCard = ({
             },
           },
         }}
-        className="w-[70%] h-[100%] border border-black/10 -mt-28 z-10 rounded-3xl overflow-hidden shadow-xs "
+        className="w-[80%] h-[60%] lg:w-[70%] lg:h-[100%] border-t shadow-md -mt-28 z-10 rounded-md overflow-hidden "
       >
         <img src={image} alt="Project" className="h-full w-full object-cover" />
       </motion.div>
 
       {/* Content section */}
-      <div className="w-full h-full flex flex-col items-start justify-around px-8  z-0 overflow-hidden ">
-        <div className="text-md md:text-xl py-1  h-[8rem] md:h-auto overflow-hidden ">
+      <div className="w-full h-full flex flex-col items-start justify-center gap-8 overflow-hidden px-8  z-0  ">
+        <div className=" md:text-xl py-1  h-[rem] md:h-auto overflow-hidden text-xs ">
           <TextReveal delay={0.5}>{content}</TextReveal>
         </div>
-        <ul className="flex gap-1  flex-wrap ">
+        <ul className="flex gap-1  lg:max-h-[35rem] flex-wrap ">
           {techStack.map((tech, index) => (
             <li
               key={index}
-              className="px-3 py-1 text-sm md:text-md tracking-wider text-center bg-white font-Mulish font-semibold rounded-full"
+              className="bg-white  text-xs lg: flex items-center justify-center px-2 rounded-full h-[20px] font-Roboto "
             >
               {tech}
             </li>
           ))}
         </ul>
-        <h1 className="text-5xl md:text-7xl  leading-relaxed ">
+        <h1 className="text-2xl md:text-7xl  leading-relaxed ">
           <TextReveal delay={0.7}>{title}</TextReveal>
         </h1>
-        <div className="flex items-center justify-start gap-4 w-full">
+        <div className="flex items-center justify-start gap-4 w-full ">
           <div className="flex items-center justify-start gap-4 w-full">
             <a href={github} target="_blank" rel="noopener noreferrer">
               <FaGithub

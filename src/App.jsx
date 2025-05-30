@@ -25,7 +25,7 @@ const App = () => {
           },
         },
       }}
-      className="h-auto w-full min-h-screen flex flex-col m-0 p-0 bg-white relative"
+      className="h-auto w-full min-h-screen flex flex-col m-0 p-0 overflow-hidden bg-white relative "
     >
       <GoToTop />
       <FirstPage />

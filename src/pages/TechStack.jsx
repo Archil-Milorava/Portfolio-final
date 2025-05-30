@@ -32,10 +32,6 @@ const frontend = [
     icon: "reactquery",
   },
   {
-    title: "bootstrap",
-    icon: "bootstrap5",
-  },
-  {
     title: "framer",
     icon: "framer",
   },
@@ -107,8 +103,6 @@ const other = [
   },
 ];
 
-
-
 const TechStack = () => {
   return (
     <section className="py-[4rem] font-pirveli bg-[#F1F1F1]  px-[10rem] h-auto w-full hidden sm:flex items-center justify-center ">
@@ -152,10 +146,10 @@ const TechStack = () => {
 
       {/* experince text div */}
       <TextFade>
-        <h1 className="text-dark text-5xl font-semibold tracking-widest  uppercase ">
+        <h1 className="text-dark text-5xl font-semibold tracking-widest uppercase ">
           Tech Stack
         </h1>
-        <p className=" text-dark font-Roboto text-sm text-start">
+        <p className=" text-dark font-Roboto text-sm text-start ">
           I have proficiency at fullstack developement and here is the stack
           that i use to build the applications
         </p>
@@ -165,5 +159,3 @@ const TechStack = () => {
 };
 
 export default TechStack;
-
-
