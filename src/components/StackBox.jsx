@@ -1,17 +1,25 @@
 import StackIcon from "tech-stack-icons";
-
+import GlareHover from "./ShinyButton";
 
 const StackBox = ({ stack }) => {
   const { title, icon } = stack;
   return (
-    <div className=" w-24 h-24 border border-black/10  rounded-lg  flex flex-col items-center justify-center gap-0.5   cursor-pointer hover:bg-orange transition-all duration-700">
-      <StackIcon className="h-8 " name={icon} />
-      <p className="text-sm font-semibold font-Roboto"> {title}</p>
-
-    </div>
+    
+      <GlareHover
+        glareColor="#ffffff"
+        glareOpacity={0.3}
+        glareAngle={-30}
+        glareSize={300}
+        transitionDuration={800}
+        playOnce={false}
+      >
+        <div className=" flex flex-col items-center justify-center">
+          <StackIcon className="h-11 " name={icon} />
+          <p className="text-sm font-semibold font-Roboto"> {title}</p>
+        </div>
+      </GlareHover>
+  
   );
 };
 
 export default StackBox;
-
-

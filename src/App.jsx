@@ -1,13 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import GoToTop from "./components/GoToTop";
+import MarqueText from "./components/MarqueText";
+import RotatingText from "./components/ShinyButton";
+import BeforeVideo from "./pages/BeforeVideo";
 import FirstPage from "./pages/FirstPage";
 import SecondPage from "./pages/SecondPage";
 import TechStack from "./pages/TechStack";
 import VideoPage from "./pages/VideoPage";
 import Footer from "./pages/footer";
-import MarqueText from "./components/MarqueText";
-import BeforeVideo from "./pages/BeforeVideo";
+import GlareHover from "./components/ShinyButton";
 
 const App = () => {
   return (
@@ -29,11 +31,14 @@ const App = () => {
     >
       <GoToTop />
       <FirstPage />
+
       <SecondPage />
-     
       <MarqueText />
+
       <TechStack />
+
       <BeforeVideo />
+
       <VideoPage />
       <Footer />
     </motion.div>
