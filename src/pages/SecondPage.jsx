@@ -32,6 +32,7 @@ const projects = [
     github: "https://github.com/Archil-Milorava/bakkenBaeck",
     liveLink: "https://bakken-baeck.vercel.app/",
     fullStack: false,
+    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748873208/1-VEED_3_q21oyn.mp4"
   },
   {
     image:
@@ -58,10 +59,11 @@ const projects = [
     github: "https://github.com/Archil-Milorava/Set-Clone",
     liveLink: "https://set-clone.vercel.app/",
     fullStack: false,
+    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748878244/Level_Up_Your_Game_itw3p1.mp4"
   },
   {
     image:
-      "https://res.cloudinary.com/deijidv94/image/upload/v1748171895/1_mrxfol.jpg",
+      "https://res.cloudinary.com/deijidv94/image/upload/v1748882960/image1_jmt8v0.jpg",
     techStack: [
       "React",
       "Tailwind Css",
@@ -82,10 +84,11 @@ const projects = [
     github: "https://github.com/Archil-Milorava/real-estate",
     liveLink: "https://real-estate-2dmj.onrender.com/",
     fullStack: true,
+    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748879000/Level_Up_Your_Game_1_s06vne.mp4"
   },
   {
     image:
-      "https://res.cloudinary.com/deijidv94/image/upload/v1748171181/1_nbxpfc.jpg",
+      "https://res.cloudinary.com/deijidv94/image/upload/v1748875808/image1_updfnu.jpg",
     techStack: [
       "React",
       "Redux Toolkit",
@@ -103,6 +106,7 @@ const projects = [
     github: "https://github.com/Archil-Milorava/ecommerce",
     liveLink: "https://ecommerce-ig4w.onrender.com",
     fullStack: true,
+    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748879707/Level_Up_Your_Game_3_p1ttja.mp4"
   },
 ];
 
