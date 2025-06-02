@@ -1,15 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import InitialLoad from "./animations/InitialLoad";
 import GoToTop from "./components/GoToTop";
 import MarqueText from "./components/MarqueText";
-import RotatingText from "./components/ShinyButton";
 import BeforeVideo from "./pages/BeforeVideo";
 import FirstPage from "./pages/FirstPage";
 import SecondPage from "./pages/SecondPage";
 import TechStack from "./pages/TechStack";
 import VideoPage from "./pages/VideoPage";
 import Footer from "./pages/footer";
-import GlareHover from "./components/ShinyButton";
 
 const App = () => {
   return (
@@ -27,18 +26,15 @@ const App = () => {
           },
         },
       }}
-      className="h-auto w-full min-h-screen flex flex-col m-0 p-0 overflow-hidden bg-white relative "
+      className="h-auto w-full min-h-screen flex flex-col m-0 p-0 overflow-hidden bg-white relative font-pirveli"
     >
+      <InitialLoad />
       <GoToTop />
       <FirstPage />
-
       <SecondPage />
       <MarqueText />
-
       <TechStack />
-
       <BeforeVideo />
-
       <VideoPage />
       <Footer />
     </motion.div>
