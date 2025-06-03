@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-unused-vars
+import EmailCopy from "../components/EmailCopy";
 import TextFade from "../components/TextFade";
 import StackBox from "./../components/StackBox";
 
@@ -105,7 +106,8 @@ const other = [
 
 const TechStack = () => {
   return (
-    <section className="py-[4rem] font-pirveli bg-[#F1F1F1]  px-[10rem] h-auto w-full hidden sm:flex items-center justify-center ">
+    <section className="py-[4rem] font-pirveli bg-[#F1F1F1]  px-[10rem] h-auto w-full hidden sm:flex items-center justify-center relative">
+      <EmailCopy />
       <TextFade className="flex flex-col gap-8">
         {/* front stack list div */}
         <div className="w-full h-1/3  flex flex-col gap-2">

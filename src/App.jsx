@@ -9,6 +9,7 @@ import SecondPage from "./pages/SecondPage";
 import TechStack from "./pages/TechStack";
 import VideoPage from "./pages/VideoPage";
 import Footer from "./pages/footer";
+import EmailCopy from "./components/EmailCopy";
 
 const App = () => {
   return (
