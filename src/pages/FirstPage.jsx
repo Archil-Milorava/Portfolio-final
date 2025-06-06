@@ -4,7 +4,11 @@ import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 import "./general.css";
 
-import { HiOutlineArrowLongDown } from "react-icons/hi2";
+import profile from "../assets/profile.png";
+
+import { RiArrowDownWideFill } from "react-icons/ri";
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,7 +33,7 @@ const FirstPage = () => {
         trigger: imageRef.current,
         start: "top bottom",
         toggleActions: "restart none none reverse",
-        scrub: 2,
+        scrub: 1,
       },
       y: 100,
       color: "#FF8863",
@@ -42,7 +46,7 @@ const FirstPage = () => {
       <div className="h-1/6 w-full flex items-center justify-center">
         <h1
           ref={nameRef}
-          className="text-[2rem] sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[8rem] mt-8 font-semibold  uppercase  tracking-widest "
+          className="text-[1.5rem] px-1 sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[8rem] mt-8 font-semibold  uppercase  tracking-widest "
         >
           archil milorava
         </h1>
@@ -50,28 +54,24 @@ const FirstPage = () => {
 
       {/* Placeholder for content */}
       <div className=" w-full h-full flex flex-col  items-center justify-around  py-2">
-        <p className="text-[1rem]  text-3xl font-bold  tracking-wide">
+        <p className="text-[0.8rem]  text-3xl font-bold  tracking-wide">
           Web Developer From <span className=" shiny-effect"> Georgia </span>
         </p>
 
-        <div className="rounded-md overflow-hidden shadow-sm">
+        <div className="rounded-md overflow-hidden mx-4 max-h-[32rem] max-w-[20rem] shadow-sm">
           <img
-            src="/profilePic.webp"
+            src={profile}
             alt="profile"
-            className="h-[30rem]  object-cover"
+            className=" object-cover"
           />
         </div>
 
-        <p className="hidden sm:block  uppercase mt-2 font-bold tracking-wide">
-          Scroll to explore more
-        </p>
-
-        <p className=" sm:hidden uppercase mt-2  tracking-widest font-semibold">
+        <p className=" sm:hidden text-xs uppercase mt-2  tracking-widest font-semibold">
           better experience on full screen
         </p>
 
         <div ref={imageRef} className="mb-4">
-          <HiOutlineArrowLongDown className="mb-4 text-4xl font-extralight" />
+          <RiArrowDownWideFill className="mb-4 text-4xl font-extralight " />
         </div>
       </div>
     </main>

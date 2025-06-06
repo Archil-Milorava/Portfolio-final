@@ -153,20 +153,20 @@ const SecondPage = () => {
       <div className="h-1/6 w-full pt-4  px-1 flex items-center justify-center font-Mulish text-black font-bold  uppercase gap-4 sm:gap-11">
         <h1
           ref={selectedRef}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-widest"
+          className="text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-widest"
         >
           selected
         </h1>
         <h1
           ref={workRef}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex items-center justify-center  tracking-widest"
+          className="text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex items-center justify-center  tracking-widest"
         >
           w
           <span>
             <img
               src="/o.png"
               alt="o"
-              className="h-[2rem] sm:h-[3rem] md:h-16 lg:h-[5rem] xl:h-[6rem]"
+              className="h-[1.5rem] sm:h-[3rem] md:h-16 lg:h-[5rem] xl:h-[6rem]"
             />
           </span>{" "}
           rk

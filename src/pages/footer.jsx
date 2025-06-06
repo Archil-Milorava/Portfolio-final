@@ -2,7 +2,7 @@ import TextReveal from "../components/TextReveal";
 
 const Footer = () => {
   return (
-    <section className=" bg-[#ebebeb] h-[5rem]  sm:h-[10rem] w-full font-Mulish font-extralight uppercase tracking-widest text-xs md:text-xl transition-all duration-1000">
+    <section className=" bg-[#ebebeb] h-[5rem]  sm:h-[10rem] w-full font-Mulish font-extralight uppercase tracking-widest text-[12px] md:text-xl transition-all duration-1000">
       <ul className="w-full h-full flex items-center justify-center text-dark gap-8 ">
         <TextReveal delay={0.1}>
           <a
@@ -25,7 +25,7 @@ const Footer = () => {
         <TextReveal delay={0.3}>
           <a
             className="cursor-pointer hover:underline transition-all duration-1000 "
-            href=""
+            href="https://www.instagram.com/achimilorava/"
             target="_blank"
           >
             Instagram

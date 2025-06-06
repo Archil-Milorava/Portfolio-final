@@ -23,7 +23,7 @@ const GoToTop = () => {
     isVisible && (
       <button
         onClick={goTop}
-        className="fixed bg-dark h-12 w-12 rounded-full flex items-center justify-center bottom-4 right-4 transition-all duration-1000 z-[9999]"
+        className="fixed bg-dark  h-12 w-12 rounded-md flex items-center justify-center bottom-4 right-4 transition-all duration-1000 z-[9999]"
       >
         <IoIosArrowUp className="text-beige" />
       </button>

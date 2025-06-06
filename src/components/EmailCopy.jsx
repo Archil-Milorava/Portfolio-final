@@ -14,13 +14,13 @@ const EmailCopy = () => {
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`absolute right-4 top-4 rounded-md text-white h-[5rem] cursor-pointer ${
+      className={`absolute right-4 top-4 rounded-md text-white h-[4rem] cursor-pointer ${
         isHovered ? "w-[15rem] bg-[#181818] px-2" : "w-[6rem] bg-[#2D2D2D]"
-      } transition-all duration-300 ease-in-out z-[9999] text-xs tracking-wider font-Roboto font-bold overflow-hidden`}
+      } transition-all duration-100 ease-in-out z-[9999] text-xs  tracking-wider font-Roboto font-bold overflow-hidden`}
     >
       {isHovered ? (
         <div
-          className={`w-full h-full flex items-center justify-around transition-opacity ${
+          className={`w-full h-full flex items-center gap-1 justify-around transition-opacity ${
             isHovered ? "opacity-100 delay-200" : "opacity-0"
           }`}
         >

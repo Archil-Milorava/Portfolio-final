@@ -108,7 +108,7 @@ const TechStack = () => {
   return (
     <section className="py-[4rem] font-pirveli bg-[#F1F1F1]  px-[10rem] h-auto w-full hidden sm:flex items-center justify-center relative">
       <EmailCopy />
-      <TextFade className="flex flex-col gap-8">
+      <TextFade className="flex flex-col  gap-8">
         {/* front stack list div */}
         <div className="w-full h-1/3  flex flex-col gap-2">
           <h1 className="text-4xl uppercase tracking-widest font-bold text-dark  ">
@@ -147,7 +147,7 @@ const TechStack = () => {
       </TextFade>
 
       {/* experince text div */}
-      <TextFade>
+      {/* <TextFade>
         <h1 className="text-dark text-5xl font-semibold tracking-widest uppercase ">
           Tech Stack
         </h1>
@@ -155,7 +155,7 @@ const TechStack = () => {
           I have proficiency at fullstack developement and here is the stack
           that i use to build the applications
         </p>
-      </TextFade>
+      </TextFade> */}
     </section>
   );
 };
