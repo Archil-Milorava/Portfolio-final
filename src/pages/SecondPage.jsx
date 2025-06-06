@@ -153,7 +153,7 @@ const SecondPage = () => {
       <div className="h-1/6 w-full pt-4  px-1 flex items-center justify-center font-Mulish text-black font-bold  uppercase gap-4 sm:gap-11">
         <h1
           ref={selectedRef}
-          className="text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-widest"
+          className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-widest"
         >
           selected
         </h1>

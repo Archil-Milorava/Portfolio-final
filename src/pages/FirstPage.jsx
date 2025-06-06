@@ -41,7 +41,7 @@ const FirstPage = () => {
   });
 
   return (
-    <main className="  w-full h-[98vh] sm:h-screen  bg-[#F5F5ED]   flex flex-col font-pirveli text-dark/90 p-0 m-0 overflow-hidden">
+    <main className="  w-full h-[95vh] sm:h-screen  bg-[#F5F5ED]   flex flex-col font-pirveli text-dark/90 p-0 m-0 overflow-hidden">
       {/* Header Container */}
       <div className="h-1/6 w-full flex items-center justify-center">
         <h1
@@ -54,7 +54,7 @@ const FirstPage = () => {
 
       {/* Placeholder for content */}
       <div className=" w-full h-full flex flex-col  items-center justify-around  py-2">
-        <p className="text-[0.8rem]  text-3xl font-bold  tracking-wide">
+        <p className="text-[0.8rem] sm:py-2  sm:text-2xl font-bold  tracking-wide">
           Web Developer From <span className=" shiny-effect"> Georgia </span>
         </p>
 
