@@ -36,7 +36,7 @@ const ProjectCard = ({
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={` md:max-w-[1400px] py-2 max-h-[50rem]  sm:h-[50rem]  md:h-[50rem] lg:h-[30rem] md:flex lg:flex-row md:px-11 lg:mx-11     overflow-visible flex flex-col gap-4 items-center relative  cursor-pointer  transition-all duration-700 hover:shadow-md hover:bg-opacity-90 ${bgColor} font-PlayfairDisplay`}
+      className={` md:max-w-[1400px] py-2 max-h-[50rem]  sm:h-[50rem]  md:h-[50rem] lg:h-[30rem] md:flex lg:flex-row md:px-11 lg:mx-11     overflow-visible flex flex-col gap-4 items-center relative  cursor-pointer  transition-all duration-700 hover:shadow-md hover:bg-opacity-85 ${bgColor} font-PlayfairDisplay`}
     >
       {/* Image container with negative margin to raise it above */}
       <motion.div

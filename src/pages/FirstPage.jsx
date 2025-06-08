@@ -46,7 +46,7 @@ const FirstPage = () => {
       <div className="h-1/6 w-full flex items-center justify-center">
         <h1
           ref={nameRef}
-          className="text-[1.5rem] px-1 sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[8rem] mt-8 font-semibold  uppercase  tracking-widest "
+          className="text-[1.8rem] px-1 sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[8rem] mt-8 font-semibold  uppercase  tracking-widest "
         >
           archil milorava
         </h1>
@@ -54,19 +54,19 @@ const FirstPage = () => {
 
       {/* Placeholder for content */}
       <div className=" w-full h-full flex flex-col  items-center justify-around  py-2">
-        <p className="text-[0.8rem] sm:py-2  sm:text-2xl font-bold  tracking-wide">
-          Web Developer From <span className=" shiny-effect"> Georgia </span>
+        <p className="text-[0.8rem] sm:py-1  sm:text-2xl font-bold  tracking-wide">
+          Web Developer From  Georgia
         </p>
 
-        <div className="rounded-md overflow-hidden mx-4 max-h-[32rem] max-w-[20rem] shadow-sm">
+        <div className="rounded-md overflow-hidden mx-4  sm:h-[32rem] sm:-[20rem] shadow-sm">
           <img
             src={profile}
             alt="profile"
-            className=" object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
 
-        <p className=" sm:hidden text-xs uppercase mt-2  tracking-widest font-semibold">
+        <p className=" sm:hidden text-xs uppercase mt-4  tracking-widest font-semibold">
           better experience on full screen
         </p>
 
