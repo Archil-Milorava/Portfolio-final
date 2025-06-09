@@ -54,7 +54,7 @@ const FirstPage = () => {
 
       {/* Placeholder for content */}
       <div className=" w-full h-full flex flex-col  items-center justify-around  py-2">
-        <p className="text-[4px] sm:py-1  sm:text-xl font-bold  tracking-wide">
+        <p className="text-[16px] sm:py-1  sm:text-xl font-bold  tracking-wide">
           Web Developer From  Georgia
         </p>
 
@@ -68,7 +68,7 @@ const FirstPage = () => {
           />
         </div>
 
-        <p className=" sm:hidden text-xs uppercase mt-4  tracking-widest font-semibold">
+        <p className=" sm:hidden text-xs uppercase  tracking-widest font-semibold">
           better experience on full screen
         </p>
 
