@@ -5,6 +5,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import CircularText from "../animations/CircularText";
 import TextReveal from "./TextReveal";
 import { useRef, useState } from "react";
+import TagReveal from "../animations/TagReveal";
 
 const ProjectCard = ({
   image,
@@ -86,12 +87,13 @@ const ProjectCard = ({
         </div>
         <ul className="flex gap-1  lg:max-h-[35rem] flex-wrap ">
           {techStack.map((tech, index) => (
-            <li
+            <TagReveal
               key={index}
+              delay={index * 0.1}
               className="bg-white  text-xs lg: flex items-center justify-center px-2 rounded-full h-[20px] font-Roboto "
             >
               {tech}
-            </li>
+            </TagReveal>
           ))}
         </ul>
         <h1 className="text-2xl md:text-7xl  leading-relaxed ">
