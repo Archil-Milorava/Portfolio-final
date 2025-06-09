@@ -1,5 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+
+import { Analytics } from "@vercel/analytics/react";
+
 import InitialLoad from "./animations/InitialLoad";
 import GoToTop from "./components/GoToTop";
 import MarqueText from "./components/MarqueText";
@@ -9,7 +12,6 @@ import SecondPage from "./pages/SecondPage";
 import TechStack from "./pages/TechStack";
 import VideoPage from "./pages/VideoPage";
 import Footer from "./pages/footer";
-import EmailCopy from "./components/EmailCopy";
 
 const App = () => {
   return (
@@ -29,6 +31,7 @@ const App = () => {
       }}
       className="h-auto w-full min-h-screen flex flex-col m-0 p-0 overflow-hidden bg-white relative font-pirveli"
     >
+      <Analytics />
       <InitialLoad />
       <GoToTop />
       <FirstPage />
