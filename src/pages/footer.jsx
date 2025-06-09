@@ -6,7 +6,7 @@ const Footer = () => {
       <ul className="w-full h-full flex items-center justify-center text-dark gap-8 ">
         <TextReveal delay={0.1}>
           <a
-            className="cursor-pointer hover:opacity-50 transition-all duration-1000 "
+            className="cursor-pointer hover:opacity-50 transition-all duration-300 "
             href="https://www.linkedin.com/in/archil-milorava-9199a110a/"
             target="_blank"
           >
@@ -15,7 +15,7 @@ const Footer = () => {
         </TextReveal>
         <TextReveal delay={0.2}>
           <a
-            className="cursor-pointer hover:opacity-50 transition-all duration-1000 "
+            className="cursor-pointer hover:opacity-50 transition-all duration-300 "
             href="https://github.com/Archil-Milorava"
             target="_blank"
           >
@@ -24,7 +24,7 @@ const Footer = () => {
         </TextReveal>
         <TextReveal delay={0.3}>
           <a
-            className="cursor-pointer hover:opacity-50 transition-all duration-1000 "
+            className="cursor-pointer hover:opacity-50 transition-all duration-300 "
             href="https://www.instagram.com/achimilorava/"
             target="_blank"
           >
@@ -33,7 +33,7 @@ const Footer = () => {
         </TextReveal>
         <TextReveal delay={0.4}>
           <a
-            className="cursor-pointer hover:opacity-50 transition-all duration-1000 "
+            className="cursor-pointer hover:opacity-50 transition-all duration-300 "
             href="https://x.com/achimilorava"
             target="_blank"
           >

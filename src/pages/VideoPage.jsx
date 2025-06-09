@@ -1,4 +1,3 @@
-import React from "react";
 import ReactPlayer from "react-player/lazy";
 
 const video =
@@ -6,8 +5,11 @@ const video =
 
 const VideoPage = () => {
   return (
-    <section className="h-screen w-full relative overflow-hidden">
+    <section className="h-screen w-full relative overflow-hidden ">
       {/* Background Video */}
+      <p className="text-4xl text-white font-bold absolute z-[9999] items-center justify-center w-full h-full">
+        coming soon...
+      </p>
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="./videobg.mp4"

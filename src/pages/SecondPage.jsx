@@ -32,7 +32,8 @@ const projects = [
     github: "https://github.com/Archil-Milorava/bakkenBaeck",
     liveLink: "https://bakken-baeck.vercel.app/",
     fullStack: false,
-    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748873208/1-VEED_3_q21oyn.mp4"
+    video:
+      "https://res.cloudinary.com/deijidv94/video/upload/v1749471678/123_aa95v2.mp4",
   },
   {
     image:
@@ -59,7 +60,8 @@ const projects = [
     github: "https://github.com/Archil-Milorava/Set-Clone",
     liveLink: "https://set-clone.vercel.app/",
     fullStack: false,
-    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748878244/Level_Up_Your_Game_itw3p1.mp4"
+    video:
+      "https://res.cloudinary.com/deijidv94/video/upload/v1748878244/Level_Up_Your_Game_itw3p1.mp4",
   },
   {
     image:
@@ -84,7 +86,8 @@ const projects = [
     github: "https://github.com/Archil-Milorava/real-estate",
     liveLink: "https://real-estate-2dmj.onrender.com/",
     fullStack: true,
-    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748879000/Level_Up_Your_Game_1_s06vne.mp4"
+    video:
+      "https://res.cloudinary.com/deijidv94/video/upload/v1748879000/Level_Up_Your_Game_1_s06vne.mp4",
   },
   {
     image:
@@ -106,7 +109,8 @@ const projects = [
     github: "https://github.com/Archil-Milorava/ecommerce",
     liveLink: "https://ecommerce-ig4w.onrender.com",
     fullStack: true,
-    video: "https://res.cloudinary.com/deijidv94/video/upload/v1748879707/Level_Up_Your_Game_3_p1ttja.mp4"
+    video:
+      "https://res.cloudinary.com/deijidv94/video/upload/v1748879707/Level_Up_Your_Game_3_p1ttja.mp4",
   },
 ];
 
@@ -115,7 +119,6 @@ gsap.registerPlugin(ScrollTrigger);
 const SecondPage = () => {
   const selectedRef = useRef(null);
   const workRef = useRef(null);
-
 
   useGSAP(() => {
     gsap.fromTo(
@@ -174,9 +177,9 @@ const SecondPage = () => {
       </div>
 
       <TextReveal>
-        <p className="font-Roboto tracking-wide uppercase text-center text-[10px] md:text-[24px] px-8 text-red-700 my-8 md:my-8">
-           ** important: The projects marked with "Full-stack" takes 1-2 minutes to load. I
-          kindly ask for a patience to check them.
+        <p className="font-Roboto tracking-wide uppercase text-center text-[10px] md:text-[16px] px-8 text-red-700 my-8 md:my-8">
+          ** important: The projects marked with "Full-stack" takes 1-2 minutes
+          to load. I kindly ask for a patience to check them.
         </p>
       </TextReveal>
       {/* cards div section */}

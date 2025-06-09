@@ -6,7 +6,7 @@ const InitialLoad = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(false);
-    }, 2500);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
