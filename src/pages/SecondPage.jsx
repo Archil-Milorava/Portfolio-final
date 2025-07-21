@@ -65,6 +65,32 @@ const projects = [
   },
   {
     image:
+      "https://res.cloudinary.com/deijidv94/image/upload/v1753099243/Screenshot_2025-07-21_153230_muoyzb.png",
+    techStack: [
+      "React",
+      "Tailwind Css",
+      "React Query",
+      "Node Js",
+      "Express",
+      "Mongoose",
+      "MongoDB",
+      "REST Api",
+      "User Roles",
+      "Digital Ocean",
+      "Google Auth",
+    ],
+    title: "Movie Recommendation",
+    content:
+      "This Is so far only backend and web dashboard for manipulating the data. The idea of this app is to build React Native app, which gives user suggestions what movie to watch. The app is fully deployed on digital ocean and Vercel.",
+    bgColor: "bg-purple",
+    github: "https://github.com/Archil-Milorava/movieApp",
+    liveLink: "https://www.whatwatch.store/login",
+    fullStack: true,
+    video:
+      "https://res.cloudinary.com/deijidv94/video/upload/v1753098245/Level_Up_Your_Game_dw2jx3.mp4",
+  },
+  {
+    image:
       "https://res.cloudinary.com/deijidv94/image/upload/v1748882960/image1_jmt8v0.jpg",
     techStack: [
       "React",
@@ -89,6 +115,7 @@ const projects = [
     video:
       "https://res.cloudinary.com/deijidv94/video/upload/v1748879000/Level_Up_Your_Game_1_s06vne.mp4",
   },
+
   {
     image:
       "https://res.cloudinary.com/deijidv94/image/upload/v1748875808/image1_updfnu.jpg",
