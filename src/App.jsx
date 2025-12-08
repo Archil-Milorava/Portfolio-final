@@ -12,6 +12,7 @@ import SecondPage from "./pages/SecondPage";
 import TechStack from "./pages/TechStack";
 import VideoPage from "./pages/VideoPage";
 import Footer from "./pages/footer";
+import StickyCardScroller from "./components/portfolioExperiences";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
       <SecondPage />
       <MarqueText />
       <TechStack />
+      <StickyCardScroller />
       <BeforeVideo />
       <VideoPage />
       <Footer />

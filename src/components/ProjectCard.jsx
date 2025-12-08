@@ -82,7 +82,7 @@ const ProjectCard = ({
 
       {/* Content section */}
       <div className="w-full h-full flex flex-col items-start justify-center gap-8 overflow-hidden px-8  z-0  ">
-        <div className=" md:text-xl py-1  h-[rem] md:h-auto overflow-hidden text-xs ">
+        <div className=" md:text-xl py-1  h-[8rem] md:h-auto overflow-hidden text-xs ">
           <TextReveal delay={0.5}>{content}</TextReveal>
         </div>
         <ul className="flex gap-1  lg:max-h-[35rem] flex-wrap ">
