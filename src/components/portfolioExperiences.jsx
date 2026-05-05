@@ -4,30 +4,30 @@ import { CornerDownRightIcon } from "lucide-react";
 import { useRef } from "react";
 
 const portfolioExperiences = [
-  {
-    id: 1,
-    title: "Frontend Developer",
-    company: "NexTbil Tech",
-    location: "Tbilisi, Georgia · Hybrid",
-    content:
-      "Frontend development for a high-traffic marketing ecosystem, maintaining multiple Next.js websites based on Figma designs. Modernized legacy infrastructure by migrating several domains from monolithic PHP to a scalable Next.js architecture. Collaborated with the marketing team in an Agile workflow to ship landing pages and new features rapidly. Worked with both SVN and Git across different platforms.",
-    bgColor: "linear-gradient(100deg, #FF7722 0%, #FF7722 100%)",
-    dateFrom: "2025 Sep",
-    dateTo: "Present",
-    duration: "4 months",
-    url: "#",
-    bg: "#FF7722",
-    stack: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "SVN",
-      "Git",
-      "Figma"
-    ],
-    isConfidential: true
-  },
+  // {
+  //   id: 1,
+  //   title: "Frontend Developer",
+  //   company: "NexTbil Tech",
+  //   location: "Tbilisi, Georgia · Hybrid",
+  //   content:
+  //     "Frontend development for a high-traffic marketing ecosystem, maintaining multiple Next.js websites based on Figma designs. Modernized legacy infrastructure by migrating several domains from monolithic PHP to a scalable Next.js architecture. Collaborated with the marketing team in an Agile workflow to ship landing pages and new features rapidly. Worked with both SVN and Git across different platforms.",
+  //   bgColor: "linear-gradient(100deg, #FF7722 0%, #FF7722 100%)",
+  //   dateFrom: "2025 Sep",
+  //   dateTo: "Present",
+  //   duration: "4 months",
+  //   url: "#",
+  //   bg: "#FF7722",
+  //   stack: [
+  //     "Next.js",
+  //     "React",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "SVN",
+  //     "Git",
+  //     "Figma"
+  //   ],
+  //   isConfidential: true
+  // },
   {
     id: 2,
     title: "Full-stack Developer",
