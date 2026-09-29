@@ -1,10 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
-
 import { Analytics } from "@vercel/analytics/react";
 
-import InitialLoad from "./animations/InitialLoad";
 import GoToTop from "./components/GoToTop";
+import Preloader from "./components/Preloader";
+import { PROFILE_IMAGE } from "./data/site";
 import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
@@ -15,24 +13,9 @@ import TechStack from "./sections/TechStack";
 
 const App = () => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      variants={{
-        hidden: { opacity: 0 },
-        visible: {
-          opacity: 1,
-          transition: {
-            duration: 2,
-            ease: "easeInOut",
-          },
-        },
-      }}
-      className="h-auto w-full min-h-screen flex flex-col m-0 p-0 overflow-hidden bg-white relative font-pirveli"
-    >
+    <div className="h-auto w-full min-h-screen flex flex-col m-0 p-0 overflow-hidden bg-white relative font-pirveli">
       <Analytics />
-      <InitialLoad />
+      <Preloader images={[PROFILE_IMAGE]} />
       <GoToTop />
       <Hero />
       <Experience />
@@ -41,7 +24,7 @@ const App = () => {
       <Pitch />
       <Showreel />
       <Footer />
-    </motion.div>
+    </div>
   );
 };
 

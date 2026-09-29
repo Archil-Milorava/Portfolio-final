@@ -1,9 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
-import profile from "../assets/profile.png";
+import { PROFILE_IMAGE } from "../data/site";
 
 import { RiArrowDownWideFill } from "react-icons/ri";
 
@@ -61,8 +61,12 @@ const Hero = () => {
 
         <div className="rounded-md overflow-hidden mx-4 mt-2 h-[25rem]  sm:h-[32rem]  shadow-sm">
           <img
-            src={profile}
-            alt="profile"
+            src={PROFILE_IMAGE}
+            alt="Archil Milorava"
+            width={642}
+            height={1024}
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

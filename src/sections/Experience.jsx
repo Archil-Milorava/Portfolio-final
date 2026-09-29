@@ -1,9 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import ExperienceCard from "../components/ExperienceCard";
 import { experiences } from "../data/experience";
+import oLetter from "../assets/o.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,9 +58,11 @@ const Experience = () => {
           w
           <span>
             <img
-              src="/o.png"
+              src={oLetter}
               alt="o"
-              className="h-[1.5rem] sm:h-[3rem] md:h-16 lg:h-[5rem] xl:h-[6rem]"
+              width={96}
+              height={96}
+              className="w-auto h-[1.5rem] sm:h-[3rem] md:h-16 lg:h-[5rem] xl:h-[6rem]"
             />
           </span>{" "}
           rk
