@@ -1,6 +1,6 @@
 import TextReveal from "../components/TextReveal";
 
-const BeforeVideo = () => {
+const Pitch = () => {
   return (
     <section className="flex h-auto bg-[#F1F1F1] py-20 px-5 md:px-10 xl:px-1  items-center justify-center">
       <p className=" text-center text-4xl md:text-6xl  font-pirveli text-gray-800/90">
@@ -22,4 +22,4 @@ const BeforeVideo = () => {
   );
 };
 
-export default BeforeVideo;
+export default Pitch;

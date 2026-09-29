@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-const MarqueText = () => {
+const SkillsMarquee = () => {
   return (
     <Marquee
       speed={80}
@@ -16,4 +16,4 @@ const MarqueText = () => {
   );
 };
 
-export default MarqueText;
+export default SkillsMarquee;

@@ -3,7 +3,7 @@ import ReactPlayer from "react-player/lazy";
 const videoUrl =
   "https://res.cloudinary.com/deijidv94/video/upload/v1749732131/1_a4updn.mp4";
 
-const VideoPage = () => {
+const Showreel = () => {
   return (
     <section className="md:pb-[2rem] w-full relative overflow-hidden">
       {/* Background Video */}
@@ -41,4 +41,4 @@ const VideoPage = () => {
   );
 };
 
-export default VideoPage;
+export default Showreel;

@@ -2,7 +2,6 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-import "./general.css";
 
 import profile from "../assets/profile.png";
 
@@ -12,7 +11,7 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FirstPage = () => {
+const Hero = () => {
   const nameRef = useRef();
   const imageRef = useRef();
 
@@ -80,4 +79,4 @@ const FirstPage = () => {
   );
 };
 
-export default FirstPage;
+export default Hero;
