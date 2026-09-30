@@ -5,7 +5,7 @@ import { techStack } from "../data/techStack";
 
 const TechStack = () => {
   return (
-    <section className="py-[4rem] font-pirveli bg-[#F1F1F1] px-[10rem] h-auto w-full hidden sm:flex items-center justify-center relative">
+    <section className="py-[4rem] font-pirveli bg-[#F1F1F1] px-[6rem] h-auto w-full hidden sm:flex items-center justify-center relative">
       <EmailCopy />
       <TextFade className="flex flex-col gap-8">
         {techStack.map((group) => (
