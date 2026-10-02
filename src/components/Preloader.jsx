@@ -63,11 +63,11 @@ const windowLoaded = () =>
 
 /**
  * Full-screen intro that stays up until the page is really ready: fonts
- * decoded, critical images decoded and the window load event fired. The
- * progress shown is the real progress, eased so it never jumps.
+ * decoded, critical images decoded and the window load event fired. Nothing
+ * counts the progress on screen, but the exit still waits for it (eased, and
+ * never earlier than the minimum show time).
  */
 const Preloader = ({ images = [] }) => {
-  const [progress, setProgress] = useState(0);
   const [fontReady, setFontReady] = useState(false);
   const [phase, setPhase] = useState("loading"); // loading -> exiting -> done
   const [reduce] = useState(reducedMotion);
@@ -105,7 +105,6 @@ const Preloader = ({ images = [] }) => {
 
     const start = performance.now();
     let shown = 0;
-    let lastRendered = -1;
     let lastFrame = start;
 
     const tick = (now) => {
@@ -116,14 +115,8 @@ const Preloader = ({ images = [] }) => {
       lastFrame = now;
       if (ceiling - shown < 0.5) shown = ceiling;
 
-      const rounded = Math.round(shown);
-      if (rounded !== lastRendered) {
-        lastRendered = rounded;
-        setProgress(rounded);
-      }
-
       if (shown >= 100) {
-        // Hold 100% for a beat, then lift the curtain.
+        // Everything is ready: hold for a beat, then lift the curtain.
         exitTimer = setTimeout(() => setPhase("exiting"), reduce ? 0 : HOLD_MS);
         return;
       }
@@ -194,19 +187,6 @@ const Preloader = ({ images = [] }) => {
           ))}
         </h1>
       )}
-
-      <div className="absolute inset-x-0 bottom-0 px-6 pb-8 sm:px-12 sm:pb-10">
-        <div className="mb-3 flex items-end justify-between font-Roboto text-[10px] uppercase tracking-[0.3em] text-white/60 sm:text-xs">
-          <span>Archil Milorava · Portfolio</span>
-          <span className="tabular-nums">{progress}%</span>
-        </div>
-        <div className="h-px w-full bg-white/15">
-          <div
-            className="h-full origin-left bg-white"
-            style={{ transform: `scaleX(${progress / 100})` }}
-          />
-        </div>
-      </div>
     </div>
   );
 };

@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import CircularText from "../animations/CircularText";
 import TextReveal from "./TextReveal";
-import { useRef } from "react";
 import TagReveal from "../animations/TagReveal";
-import useNearViewport from "../hooks/useNearViewport";
 
 const monthFormat = new Intl.DateTimeFormat("en", {
   month: "short",
@@ -41,34 +39,17 @@ const ExperienceCard = ({
   url,
   isConfidential,
   color,
-  video,
   image,
 }) => {
-  const videoRef = useRef(null);
-  const cardRef = useRef(null);
-  // Posters only start downloading shortly before the card scrolls into view.
-  const nearViewport = useNearViewport(cardRef);
-
-  const handleMouseEnter = () => {
-    videoRef.current?.play();
-  };
-
-  const handleMouseLeave = () => {
-    if (!videoRef.current) return;
-    videoRef.current.pause();
-    videoRef.current.currentTime = 0;
-  };
-
   return (
     <div
-      ref={cardRef}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={{ backgroundColor: color }}
-      className="md:max-w-[1400px] py-2 max-h-[50rem] sm:h-[50rem] md:h-[50rem] lg:h-[34rem] md:flex lg:flex-row md:px-11 lg:mx-11 overflow-visible flex flex-col gap-4 items-center relative cursor-pointer transition-all duration-700 hover:shadow-md font-serif"
+      // The hover colour is the same hex with 92% alpha ("eb"), so only the
+      // background fades, not the text and image inside the card.
+      style={{ "--card": color, "--card-hover": `${color}eb` }}
+      className="group bg-[color:var(--card)] hover:bg-[color:var(--card-hover)] md:max-w-[1400px] py-2 max-h-[50rem] sm:h-[50rem] md:h-[50rem] lg:h-[34rem] md:flex lg:flex-row md:px-11 lg:mx-11 overflow-visible flex flex-col gap-4 items-center relative cursor-pointer transition-all duration-700 hover:shadow-md font-serif"
     >
-      {/* Media sits above the card via negative margin. Nothing is downloaded
-          until hover; the poster (or the dark base) shows until then. */}
+      {/* The screenshot sits above the card via negative margin. It is
+          lazy-loaded and zooms slightly when the card is hovered. */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -86,17 +67,15 @@ const ExperienceCard = ({
         }}
         className="w-[80%] h-[60%] aspect-[16/10] lg:aspect-auto lg:w-[70%] lg:h-[100%] border-t shadow-md -mt-28 z-10 rounded-md overflow-hidden relative bg-dark"
       >
-        <video
-          ref={videoRef}
-          muted
-          loop
-          playsInline
-          preload="none"
-          poster={nearViewport ? image : undefined}
-          className="w-full h-full object-cover"
-        >
-          <source src={video} type="video/mp4" />
-        </video>
+        <img
+          src={image}
+          alt={`${company} product screenshots`}
+          width={1080}
+          height={1080}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+        />
       </motion.div>
 
       <div className="w-full h-full flex flex-col items-start justify-center gap-6 overflow-hidden px-8 z-0">

@@ -1,5 +1,6 @@
 // Newest first. `to: null` means the role is current.
-// `color` is the card background; `video` is a placeholder until real demo clips exist.
+// `color` is the card background (6-digit hex, it fades to 92% on hover); `image` is a square (1080x1080) screenshot
+// mockup in /public, shown above the card.
 export const experiences = [
   {
     id: "nextbil",
@@ -20,9 +21,9 @@ export const experiences = [
       "Figma",
     ],
     url: "https://www.linkedin.com/company/nextgentech.com.ge/posts/?feedView=all",
-    isConfidential: true,
-    color: "#FFB27F",
-    video: "/videobg.mp4",
+    isConfidential: false,
+    color: "#FF8864",
+    image: "/nextgentech-image.webp",
   },
   {
     id: "datapad",
@@ -44,8 +45,8 @@ export const experiences = [
     ],
     url: "https://datapad.at/",
     isConfidential: true,
-    color: "#B9B2F0",
-    video: "/videobg.mp4",
+    color: "#E8E8E8",
+    image: "/datapad-image.webp",
   },
   {
     id: "bitasmbl",
@@ -59,8 +60,8 @@ export const experiences = [
     stack: ["React", "Tailwind CSS", "Figma", "REST APIs", "GitHub"],
     url: "http://bitasmbl.com/",
     isConfidential: false,
-    color: "#FF9A94",
-    video: "/videobg.mp4",
+    color: "#FEEA9E",
+    image: "/bitasmbl-image.webp",
   },
   {
     id: "blitzsport",
@@ -74,7 +75,7 @@ export const experiences = [
     stack: ["Next.js", "Tailwind CSS", "NextAuth", "jotai", "Git", "Cloudinary"],
     url: "https://www.blitzsports.live/",
     isConfidential: false,
-    color: "#C9B39C",
-    video: "/videobg.mp4",
+    color: "#EDDED6",
+    image: "/blitzsports-image.webp",
   },
 ];

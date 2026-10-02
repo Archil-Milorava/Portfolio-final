@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1C1B19" />
 
-    <title>Archil Milorava — Full-stack Web Developer</title>
+    <title>Welcome to my portfolio</title>
     <meta name="description" content="Portfolio of Archil Milorava, a full-stack web developer working with React, Next.js, Node.js and MongoDB." />
     <link rel="canonical" href="https://archilmilorava.com/" />
 
@@ -39,17 +39,14 @@
     <link rel="preload" href="/fonts/pirveli.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/profile.webp" as="image" type="image/webp" fetchpriority="high" />
 
-    <!-- Paints a dark screen with a loading line before any JS runs; React
-         replaces it with the real preloader, which looks the same. -->
+    <!-- Paints a dark screen before any JS runs; React replaces it with the
+         real preloader, which has the same background. -->
     <style>
       #boot { position: fixed; inset: 0; z-index: 9999; background: #1c1b19; }
-      #boot i { position: absolute; left: 24px; right: 24px; bottom: 32px; height: 1px; background: rgba(255,255,255,.15); overflow: hidden; }
-      #boot i::after { content: ""; position: absolute; inset: 0; background: #fff; transform-origin: left; animation: boot 1.4s ease-in-out infinite; }
-      @keyframes boot { 0% { transform: scaleX(0); } 100% { transform: scaleX(1); } }
     </style>
   </head>
   <body>
-    <div id="root"><div id="boot"><i></i></div></div>
+    <div id="root"><div id="boot"></div></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

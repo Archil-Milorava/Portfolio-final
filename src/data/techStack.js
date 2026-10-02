@@ -25,6 +25,7 @@ import {
   siReact,
   siReactquery,
   siRedux,
+  siSwagger,
   siTailwindcss,
   siTypescript,
 } from "simple-icons";
@@ -71,6 +72,7 @@ export const techStack = [
       tech(siPostgresql),
       tech(siPrisma),
       tech(siPostman),
+      tech(siSwagger),
     ],
   },
   {
