@@ -1,10 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-import "./general.css";
 
-import profile from "../assets/profile.png";
+import { PROFILE_IMAGE } from "../data/site";
 
 import { RiArrowDownWideFill } from "react-icons/ri";
 
@@ -12,7 +11,7 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FirstPage = () => {
+const Hero = () => {
   const nameRef = useRef();
   const imageRef = useRef();
 
@@ -62,15 +61,15 @@ const FirstPage = () => {
 
         <div className="rounded-md overflow-hidden mx-4 mt-2 h-[25rem]  sm:h-[32rem]  shadow-sm">
           <img
-            src={profile}
-            alt="profile"
+            src={PROFILE_IMAGE}
+            alt="Archil Milorava"
+            width={642}
+            height={1024}
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>
-
-        <p className=" sm:hidden text-xs uppercase  tracking-widest font-semibold">
-          better experience on full screen
-        </p>
 
         <div ref={imageRef} className="mb-1">
           <RiArrowDownWideFill className="mb- text-4xl font-extralight " />
@@ -80,4 +79,4 @@ const FirstPage = () => {
   );
 };
 
-export default FirstPage;
+export default Hero;

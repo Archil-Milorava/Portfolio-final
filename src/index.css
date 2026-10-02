@@ -1,42 +1,68 @@
-/*  */
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/*   own font */
+/* Fonts are self-hosted from /public/fonts (only the files the site really
+   uses): no request to Google, and font-display: swap keeps text visible. */
 @font-face {
-  font-family: "bla";
-  src: url("/src/assets/fonts/bla.ttf") format("opentype");
-  font-weight: normal;
+  font-family: "Mulish";
+  src: url("/fonts/mulish-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 1000;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "pirveli";
-  src: url("/src/assets/fonts/pirveli.otf") format("opentype");
+  src: url("/fonts/pirveli.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
-  font-family: "meore";
-  src: url("/src/assets/fonts/meore.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-
-
-
-/*  normal CSS */
 ::selection {
   background-color: #ff8863;
   color: white;
 }
 
-/*  Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Preloader: each letter of the welcome word rises into view. `backwards`
+   only styles the delay period, so the exit transition can take over after. */
+@keyframes preloader-rise {
+  from {
+    transform: translateY(120%);
+  }
+}
+
+.preloader-letter {
+  animation: preloader-rise 800ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader-letter {
+    animation: none;
+  }
+}

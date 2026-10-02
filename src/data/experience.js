@@ -1,0 +1,81 @@
+// Newest first. `to: null` means the role is current.
+// `color` is the card background (6-digit hex, it fades to 92% on hover); `image` is a square (1080x1080) screenshot
+// mockup in /public, shown above the card.
+export const experiences = [
+  {
+    id: "nextbil",
+    role: "Frontend Developer",
+    company: "NexTbil Tech",
+    location: "Tbilisi, Georgia · Hybrid",
+    from: "2025-09",
+    to: null,
+    description:
+      "Frontend development for a high-traffic marketing ecosystem, maintaining multiple Next.js websites based on Figma designs. Modernized legacy infrastructure by migrating several domains from monolithic PHP to a scalable Next.js architecture. Collaborated with the marketing team in an Agile workflow to ship landing pages and new features rapidly. Worked with both SVN and Git across different platforms.",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "SVN",
+      "Git",
+      "Figma",
+    ],
+    url: "https://www.linkedin.com/company/nextgentech.com.ge/posts/?feedView=all",
+    isConfidential: false,
+    color: "#FF8864",
+    image: "/nextgentech-image.webp",
+  },
+  {
+    id: "datapad",
+    role: "Full-stack Developer",
+    company: "dataPad GmbH",
+    location: "Vienna, Austria · Remote",
+    from: "2025-08",
+    to: null,
+    description:
+      "Developed full-stack features for a large-scale Meteor.js application powering a document digitization platform. Built REST API endpoints for the React Native mobile app, enabling document upload, form filling, and synchronization. Implemented customer-facing features using React Hook Form and MUI, including a dynamic document upload portal. Contributed to backend logic and worked directly with MongoDB to manage document workflows and user data.",
+    stack: [
+      "Meteor.js",
+      "React",
+      "MongoDB",
+      "REST APIs",
+      "MUI",
+      "React Hook Form",
+      "Node.js",
+    ],
+    url: "https://datapad.at/",
+    isConfidential: true,
+    color: "#E8E8E8",
+    image: "/datapad-image.webp",
+  },
+  {
+    id: "bitasmbl",
+    role: "Frontend Developer",
+    company: "Bitasmbl",
+    location: "Tbilisi, Georgia · Remote",
+    from: "2025-02",
+    to: "2025-08",
+    description:
+      "Developed the UI for an AI-powered recruitment platform enabling developers to showcase projects and match with recruiters. Translated complex Figma designs into responsive, modern React components. Built reusable UI elements and improved design consistency across the app. Contributed to a fresh UI layout focused on clarity and performance.",
+    stack: ["React", "Tailwind CSS", "Figma", "REST APIs", "GitHub"],
+    url: "http://bitasmbl.com/",
+    isConfidential: false,
+    color: "#FEEA9E",
+    image: "/bitasmbl-image.webp",
+  },
+  {
+    id: "blitzsport",
+    role: "Frontend Developer",
+    company: "Blitzsport",
+    location: "Tbilisi, Georgia · Remote",
+    from: "2023-02",
+    to: "2025-01",
+    description:
+      "Built and maintained the Next.js frontend for a sports news platform. Implemented Google Authentication and role-based access control for internal editors. Developed a full back-office including rich-text editor integration, content publishing tools, and a dashboard UI. Styled all pages with Tailwind CSS and optimized overall performance and accessibility.",
+    stack: ["Next.js", "Tailwind CSS", "NextAuth", "jotai", "Git", "Cloudinary"],
+    url: "https://www.blitzsports.live/",
+    isConfidential: false,
+    color: "#EDDED6",
+    image: "/blitzsports-image.webp",
+  },
+];

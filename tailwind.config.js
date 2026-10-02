@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bla: ["bla", "sans-serif"],
         pirveli: ["pirveli", "sans-serif"],
-        meore: ["meore", "sans-serif"],
         Mulish: ["Mulish", "sans-serif"],
-        PlayfairDisplay: ["PlayfairDisplay", "serif"],
         Roboto: ["Roboto", "sans-serif"],
+        // The system serif. This is what the site has always rendered here
+        // (an old "PlayfairDisplay" name never matched a loaded font).
+        serif: ["serif"],
       },
       colors: {
         white: "#ffff",
