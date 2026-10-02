@@ -167,7 +167,7 @@ const Preloader = ({ images = [] }) => {
       {fontReady && (
         // The word leaves as one piece: it fades and drifts up while the
         // curtain is still barely moving, so nothing is left half-visible.
-        <h1
+        <div
           aria-hidden="true"
           className="flex overflow-hidden px-2 py-3 font-pirveli text-lg uppercase tracking-widest sm:text-5xl md:text-6xl lg:text-8xl 2xl:text-[8rem]"
           style={{
@@ -185,7 +185,7 @@ const Preloader = ({ images = [] }) => {
               {letter}
             </span>
           ))}
-        </h1>
+        </div>
       )}
     </div>
   );

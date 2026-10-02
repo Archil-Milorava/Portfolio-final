@@ -44,14 +44,17 @@ const Experience = () => {
 
   return (
     <section className="w-full h-auto min-h-screen overflow-hidden text-dark sm:flex sm:flex-col bg-white">
-      <div className="h-1/6 w-full pt-4 px-1 flex items-center justify-center font-Mulish text-black font-bold uppercase gap-4 sm:gap-11">
-        <h1
+      <h2
+        aria-label="Selected work"
+        className="h-1/6 w-full pt-4 px-1 flex items-center justify-center font-Mulish text-black font-bold uppercase gap-4 sm:gap-11"
+      >
+        <span
           ref={selectedRef}
           className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-widest"
         >
           selected
-        </h1>
-        <h1
+        </span>
+        <span
           ref={workRef}
           className="text-2xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex items-center justify-center tracking-widest"
         >
@@ -66,8 +69,8 @@ const Experience = () => {
             />
           </span>{" "}
           rk
-        </h1>
-      </div>
+        </span>
+      </h2>
 
       <div className="h-full w-full flex flex-col gap-44 items-center my-40 sm:my-24">
         {experiences.map((experience) => (

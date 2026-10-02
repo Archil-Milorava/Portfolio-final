@@ -71,10 +71,6 @@ const Hero = () => {
           />
         </div>
 
-        <p className=" sm:hidden text-xs uppercase  tracking-widest font-semibold">
-          better experience on full screen
-        </p>
-
         <div ref={imageRef} className="mb-1">
           <RiArrowDownWideFill className="mb- text-4xl font-extralight " />
         </div>

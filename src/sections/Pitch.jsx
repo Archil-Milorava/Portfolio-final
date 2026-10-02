@@ -6,7 +6,7 @@ const Pitch = () => {
       <p className=" text-center text-4xl md:text-6xl  font-pirveli text-gray-800/90">
         I don't just write code - I{" "}
         <TextReveal delay={0.2}>
-          <span className="text-[#CB8259]">deliever</span> complete, <br />
+          <span className="text-[#CB8259]">deliver</span> complete, <br />
         </TextReveal>
         <TextReveal delay={0.4}>
           <span className="text-[#CB8259]"> production-ready websites.</span>

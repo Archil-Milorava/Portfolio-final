@@ -46,7 +46,7 @@ const ExperienceCard = ({
       // The hover colour is the same hex with 92% alpha ("eb"), so only the
       // background fades, not the text and image inside the card.
       style={{ "--card": color, "--card-hover": `${color}eb` }}
-      className="group bg-[color:var(--card)] hover:bg-[color:var(--card-hover)] md:max-w-[1400px] py-2 max-h-[50rem] sm:h-[50rem] md:h-[50rem] lg:h-[34rem] md:flex lg:flex-row md:px-11 lg:mx-11 overflow-visible flex flex-col gap-4 items-center relative cursor-pointer transition-all duration-700 hover:shadow-md font-serif"
+      className="group bg-[color:var(--card)] hover:bg-[color:var(--card-hover)] md:max-w-[1400px] py-2 max-h-[50rem] sm:h-[50rem] md:h-[50rem] lg:h-[34rem] md:flex lg:flex-row md:px-11 lg:mx-11 overflow-visible flex flex-col gap-4 items-center relative transition-all duration-700 hover:shadow-md font-serif"
     >
       {/* The screenshot sits above the card via negative margin. It is
           lazy-loaded and zooms slightly when the card is hovered. */}
@@ -101,9 +101,9 @@ const ExperienceCard = ({
         </ul>
 
         <div>
-          <h2 className="text-2xl md:text-6xl leading-relaxed">
+          <h3 className="text-2xl md:text-6xl leading-relaxed">
             <TextReveal delay={0.7}>{company}</TextReveal>
-          </h2>
+          </h3>
           <p className="font-Roboto text-xs md:text-sm uppercase tracking-widest">
             {role} · {location}
           </p>
