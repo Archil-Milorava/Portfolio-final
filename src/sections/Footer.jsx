@@ -1,14 +1,14 @@
 import TextReveal from "../components/TextReveal";
 
 
-const linkClass =
-  "text-sm cursor-pointer hover:opacity-50 transition-all duration-300";
+// const linkClass =
+//   "text-sm cursor-pointer hover:opacity-50 transition-all duration-300";
 
 const Footer = () => {
   return (
-    <section className="bg-[#ebebeb] w-full flex flex-col items-center gap-6 py-10 sm:pt-8 font-Mulish font-extralight uppercase tracking-widest text-[12px] md:text-xl text-dark transition-all duration-1000">
+    <section className="bg-[#ebebeb] w-full flex flex-col items-center gap-6 py-12 sm:pt-12 font-Mulish font-extralight uppercase tracking-widest text-[12px] md:text-xl text-dark transition-all duration-1000">
       {/* the CV in both languages (PDFs live in /public). */}
-      <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 px-4">
+      {/* <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 px-4">
         <li>
           <TextReveal delay={0.2}>
             <a
@@ -33,7 +33,7 @@ const Footer = () => {
             </a>
           </TextReveal>
         </li>
-      </ul>
+      </ul> */}
 
       <ul className="w-full flex items-center justify-center text-dark gap-8 ">
         <TextReveal delay={0.1}>
