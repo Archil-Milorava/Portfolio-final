@@ -101,7 +101,7 @@ const ExperienceCard = ({
         </ul>
 
         <div>
-          <h3 className="text-2xl md:text-6xl leading-relaxed">
+          <h3 className="text-2xl pb-2 md:text-6xl leading-relaxed">
             <TextReveal delay={0.7}>{company}</TextReveal>
           </h3>
           <p className="font-Roboto text-xs md:text-sm uppercase tracking-widest">
